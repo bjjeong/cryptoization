@@ -1,8 +1,60 @@
 text {
     color: white;
     fill: white;
+    font-family: Circular,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    "Helvetica Neue",
+    sans-serif !important;
 }
 
 svg {
     background-color: rgb(29, 29, 29);
+    position: fixed;
+    z-index: -10;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 20px;
+    background: rgb(29, 29, 29);
+}
+
+.title {
+    width: 80%;
+}
+
+
+.links {
+    width: 20%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+i {
+    color: white;
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    font-family: Circular,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    "Helvetica Neue",
+    sans-serif !important;
+}
+
+body {
+    margin: 0;
 }
