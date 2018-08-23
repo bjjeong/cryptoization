@@ -14,11 +14,34 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
+    <script>
+        function playback() {
+            let play = document.getElementById("play");
+            let pause = document.getElementById("pause");
+
+            if(play.hasAttribute("hidden")) {
+                play.removeAttribute("hidden");
+                pause.setAttribute("hidden", "");
+            } else if(pause.hasAttribute("hidden")) {
+                pause.removeAttribute("hidden");
+                play.setAttribute("hidden", "");
+            }
+                
+        }
+    </script>
     <svg id="svg">
         <div class="header">
             <h1 class="title"> CRYPTOIZATION </h1>
             <div class="links">
                 <ul>
+                    <li>
+                        <button id="play" hidden onclick="playback(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="pause" onclick="playback(this)">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                    </li>
                     <li>
                         <a href="https://www.github.com/bjjeong/cryptoization">
                             <i class="fab fa-github"></i>

@@ -37,6 +37,16 @@ ul {
     justify-content: space-around;
     
 }
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.pause {
+    /* display: none; */
+}
+
 i {
     color: white;
     font-size: 25px;
