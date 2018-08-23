@@ -1,8 +1,8 @@
-.node circle {
-    stroke: rgb(197, 95, 95);
-    stroke-width: 1.5px;
+text {
+    color: white;
+    fill: white;
 }
 
 svg {
-    background-color: rgb(156, 140, 140);
+    background-color: rgb(29, 29, 29);
 }
