@@ -12,6 +12,8 @@ text {
 svg {
     background-color: rgb(29, 29, 29);
     position: fixed;
+    display: flex;
+    justify-content: flex-end;
     z-index: -10;
 }
 
@@ -20,13 +22,41 @@ svg {
     display: flex;
     justify-content: space-between;
     padding: 20px 0 0 20px;
-    background: rgb(29, 29, 29);
+    background: transparent;
+}
+
+.key {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.modal {
+    color: rgb(73, 73, 73);
+}
+
+.modal-content {
+    text-align: center;
+    line-height: 22px;
+}
+
+.modal-content h4 {
+    padding: 0 0 20px 0;
+}
+
+.modal p {
+    font-size: 18px;
 }
 
 .title {
-    width: 80%;
+    width: 20%;
 }
 
+.amount {
+    width: 60%;
+}
 
 .links {
     width: 20%;
@@ -43,16 +73,25 @@ button {
     border: none;
 }
 
-.pause {
-    /* display: none; */
-}
-
 i {
     color: white;
     font-size: 25px;
 }
 
 h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    font-family: Circular,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    "Helvetica Neue",
+    sans-serif !important;
+}
+
+h2 {
     font-size: 30px;
     font-weight: 600;
     color: white;

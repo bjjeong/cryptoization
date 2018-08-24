@@ -6,34 +6,23 @@
     <title>cryptoization</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./lib/css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./lib/css/main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
-
-    <!-- <script src="./lib/js/three.js"></script> -->
-    <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
-    <script>
-        function playback() {
-            let play = document.getElementById("play");
-            let pause = document.getElementById("pause");
-
-            if(play.hasAttribute("hidden")) {
-                play.removeAttribute("hidden");
-                pause.setAttribute("hidden", "");
-            } else if(pause.hasAttribute("hidden")) {
-                pause.removeAttribute("hidden");
-                play.setAttribute("hidden", "");
-            }
-                
-        }
-    </script>
     <svg id="svg">
         <div class="header">
             <h1 class="title"> CRYPTOIZATION </h1>
+            <h2 id="amount">
+            </h2>
             <div class="links">
                 <ul>
+                    <li>
+                        <a class="modal-trigger" href="#modal" ">
+                            <i class="fas fa-info-circle "></i>
+                        </a>
+                    </li>
                     <li>
                         <button id="play" hidden onclick="playback(this)">
                             <i class="fas fa-play"></i>
@@ -60,7 +49,46 @@
                 </ul>
             </div>
         </div>
+        <div class="key">
+            <div>
+                <div id="modal" class="modal bottom-sheet">
+                    <div class="modal-content">
+                        <h4>Welcome!</h4>
+                        <p>Cryptoization is a data visualization of every Bitcoin (BTC) transaction that occurs on the blockchain in real time.</p>
+                        <br/>
+                        <p>The size of each of the nodes are dependent on the size of the transaction, in USD.</p>
+                        <br/>
+                        <p>Sit back, relax, and watch in awe as you witness the insane amount of money that moves throughout the world! </p>
+                        <br/>
+                        <br/>
+                        <p><strong>** Scroll/double-tap to zoom, click and hold on nodes to drag **</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </svg>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script type="text/javascript" src="./lib/js/bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+                $('.modal').modal();
+        });
+
+        function playback() {
+                let play = document.getElementById("play");
+                let pause = document.getElementById("pause");
+
+                if (play.hasAttribute("hidden")) {
+                    play.removeAttribute("hidden");
+                    pause.setAttribute("hidden", "");
+                } else if (pause.hasAttribute("hidden")) {
+                    pause.removeAttribute("hidden");
+                    play.setAttribute("hidden", "");
+                }
+
+        }
+    </script>
 </body>
 </html>
