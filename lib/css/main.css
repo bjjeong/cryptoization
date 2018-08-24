@@ -75,11 +75,11 @@ button {
 
 i {
     color: white;
-    font-size: 25px;
+    font-size: 1.7em;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 1.9em;
     font-weight: 600;
     color: white;
     margin: 0;
@@ -92,7 +92,7 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 1.9em;
     font-weight: 600;
     color: white;
     margin: 0;
