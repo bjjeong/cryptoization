@@ -1,109 +1,215 @@
-text {
-    color: white;
-    fill: white;
-    font-family: Circular,
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    "Helvetica Neue",
-    sans-serif !important;
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    text {
+        color: white;
+        fill: white;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    }
+
+    svg {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(29, 29, 29);
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+        z-index: -10;
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0 0 20px;
+        background: transparent;
+    }
+
+    .key {
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+    }
+
+    .modal {
+        color: rgb(73, 73, 73);
+    }
+
+    .modal-content {
+        text-align: center;
+        line-height: 22px;
+    }
+
+    .modal-content h4 {
+        padding: 0 0 20px 0;
+    }
+
+    .modal p {
+        font-size: 18px;
+    }
+
+    .title {
+        width: 20%;
+    }
+
+    .amount {
+        width: 60%;
+    }
+
+    .links {
+        width: 20%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+    }
+
+    i {
+        color: white;
+        font-size: 100%;
+        /* padding: 0 0 0 5px; */
+    }
+
+    h1 {
+        font-size: 100%;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    }
+
+    h2 {
+        font-size: 100%;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    li {
+        padding: 0 0 0 5px;
+    }
 }
 
-svg {
-    background-color: rgb(29, 29, 29);
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    z-index: -10;
-}
+@media only screen and (min-width: 768px) {
+    text {
+        color: white;
+        fill: white;
+        font-family: Circular,
+        -apple-system,
+        BlinkMacSystemFont,
+        Roboto,
+        "Helvetica Neue",
+        sans-serif !important;
+    }
 
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0 0 20px;
-    background: transparent;
-}
+    svg {
+        background-color: rgb(29, 29, 29);
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+        z-index: -10;
+    }
 
-.key {
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-}
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0 0 20px;
+        background: transparent;
+    }
 
-.modal {
-    color: rgb(73, 73, 73);
-}
+    .key {
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+    }
 
-.modal-content {
-    text-align: center;
-    line-height: 22px;
-}
+    .modal {
+        color: rgb(73, 73, 73);
+    }
 
-.modal-content h4 {
-    padding: 0 0 20px 0;
-}
+    .modal-content {
+        text-align: center;
+        line-height: 22px;
+    }
 
-.modal p {
-    font-size: 18px;
-}
+    .modal-content h4 {
+        padding: 0 0 20px 0;
+    }
 
-.title {
-    width: 20%;
-}
+    .modal p {
+        font-size: 18px;
+    }
 
-.amount {
-    width: 60%;
-}
+    .title {
+        width: 20%;
+    }
 
-.links {
-    width: 20%;
-}
+    .amount {
+        width: 60%;
+    }
 
-ul {
-    display: flex;
-    justify-content: space-around;
-    
-}
+    .links {
+        width: 20%;
+    }
 
-button {
-    background-color: transparent;
-    border: none;
-}
+    ul {
+        display: flex;
+        justify-content: space-around;
+        
+    }
 
-i {
-    color: white;
-    font-size: 1.7em;
-}
+    button {
+        background-color: transparent;
+        border: none;
+    }
 
-h1 {
-    font-size: 1.9em;
-    font-weight: 600;
-    color: white;
-    margin: 0;
-    font-family: Circular,
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    "Helvetica Neue",
-    sans-serif !important;
-}
+    i {
+        color: white;
+        font-size: 1.7em;
+    }
 
-h2 {
-    font-size: 1.9em;
-    font-weight: 600;
-    color: white;
-    margin: 0;
-    font-family: Circular,
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    "Helvetica Neue",
-    sans-serif !important;
-}
+    h1 {
+        font-size: 1.9em;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+        font-family: Circular,
+        -apple-system,
+        BlinkMacSystemFont,
+        Roboto,
+        "Helvetica Neue",
+        sans-serif !important;
+    }
 
-body {
-    margin: 0;
+    h2 {
+        font-size: 1.9em;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+        font-family: Circular,
+        -apple-system,
+        BlinkMacSystemFont,
+        Roboto,
+        "Helvetica Neue",
+        sans-serif !important;
+    }
+
+    body {
+        margin: 0;
+    }
 }
